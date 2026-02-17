@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% set title = "Resources" %}
+
+{% block hero %}
+<div class="hero hero-compact">
+  <div class="hero-left">
+    <h1>RESOURCES</h1>
+    <p class="hero-subtitle">
+      Helpful FAQs, implementation guides, and links to official references for smarter traffic systems.
+    </p>
+  </div>
+</div>
+{% endblock %}
+
+{% block main %}
+<main class="home-main">
+  <section class="card">
+    <h2>FAQs</h2>
+    <div class="home-facts-grid">
+      <article>
+        <h3>What hardware is needed at intersections?</h3>
+        <p>IP camera with stable mount and power, PoE or local adapter, network uplink, and an edge device or server to run detection.</p>
+      </article>
+      <article>
+        <h3>Can this work without GPUs?</h3>
+        <p>Yes, with smaller models and reduced FPS. For city-scale deployments or high-accuracy needs, a GPU is recommended.</p>
+      </article>
+      <article>
+        <h3>How are privacy and compliance handled?</h3>
+        <p>We process only vehicle features, no face recognition. Retention policies and masking align with local regulations.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Implementation guides</h2>
+    <ul class="awareness-list">
+      <li>Intersection survey checklist (approach lanes, turning counts, pedestrian crossings).</li>
+      <li>Camera placement best practices and calibration notes.</li>
+      <li>Signal controller integration and fail-safe plans.</li>
+      <li>Monitoring dashboards and alerting setup.</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>External references</h2>
+    <div class="awareness-grid">
+      <article>
+        <h3>MoRTH</h3>
+        <p>Official road safety resources, standards, and advisories.</p>
+        <a class="cta-link" href="https://morth.nic.in" target="_blank" rel="noopener">Visit MoRTH</a>
+      </article>
+      <article>
+        <h3>IRC Guidelines</h3>
+        <p>Indian Roads Congress guidelines for signalized intersections and design.</p>
+        <a class="cta-link" href="https://www.irc.nic.in/" target="_blank" rel="noopener">Visit IRC</a>
+      </article>
+      <article>
+        <h3>Open Data Portals</h3>
+        <p>Datasets for traffic counts, incidents, and mobility indicators.</p>
+        <a class="cta-link" href="https://data.gov.in/" target="_blank" rel="noopener">data.gov.in</a>
+      </article>
+    </div>
+  </section>
+</main>
+{% endblock %}

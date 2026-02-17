@@ -1,0 +1,1442 @@
+[
+  {
+    "city": "Delhi NCR",
+    "state": "Delhi",
+    "classification": "metro",
+    "population_millions": 30.3,
+    "avg_peak_speed_kmph": 18,
+    "avg_delay_minutes": 47,
+    "vehicle_mix": {
+      "two_wheeler_pct": 0.46,
+      "car_pct": 0.32,
+      "bus_pct": 0.08,
+      "truck_pct": 0.06,
+      "auto_pct": 0.08
+    },
+    "issues": [
+      "Severe peak-hour congestion along Ring Road and Outer Ring Road",
+      "High violation rate at signalised junctions",
+      "Frequent pedestrian conflicts at busy crossings"
+    ],
+    "recommended_actions": [
+      "Deploy adaptive signals with transit priority in bus-dense corridors",
+      "Integrate red-light violation detection cameras",
+      "Add pedestrian scramble phases at Chandni Chowk and Connaught Place"
+    ]
+  },
+  {
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "classification": "metro",
+    "population_millions": 26.6,
+    "avg_peak_speed_kmph": 19,
+    "avg_delay_minutes": 42,
+    "vehicle_mix": {
+      "two_wheeler_pct": 0.38,
+      "car_pct": 0.35,
+      "bus_pct": 0.12,
+      "truck_pct": 0.05,
+      "auto_pct": 0.1
+    },
+    "issues": [
+      "Long signal cycles on Western and Eastern Express Highways",
+      "Bottlenecks near Metro construction zones",
+      "Chronic curbside parking encroachment"
+    ],
+    "recommended_actions": [
+      "Deploy adaptive offsets to coordinate north-south arterials",
+      "Provide dynamic detour guidance via VMS and app integration",
+      "Introduce automated parking enforcement near stations"
+    ]
+  },
+  {
+    "city": "Bengaluru",
+    "state": "Karnataka",
+    "classification": "metro",
+    "population_millions": 13.6,
+    "avg_peak_speed_kmph": 17,
+    "avg_delay_minutes": 51,
+    "vehicle_mix": {
+      "two_wheeler_pct": 0.49,
+      "car_pct": 0.29,
+      "bus_pct": 0.09,
+      "truck_pct": 0.04,
+      "auto_pct": 0.09
+    },
+    "issues": [
+      "Whitefield and ORR commute times exceeding 90 minutes",
+      "High share of IT commuter traffic causing directional peaks",
+      "Signal jump violations during peak hours"
+    ],
+    "recommended_actions": [
+      "Deploy adaptive clusters near ORR and Silk Board",
+      "Provide reversible lane strategies with real-time signage",
+      "Gamify compliance through corporate commute dashboards"
+    ]
+  },
+  {
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "classification": "metro",
+    "population_millions": 11.5,
+    "avg_peak_speed_kmph": 21,
+    "avg_delay_minutes": 39,
+    "vehicle_mix": {
+      "two_wheeler_pct": 0.41,
+      "car_pct": 0.31,
+      "bus_pct": 0.14,
+      "truck_pct": 0.06,
+      "auto_pct": 0.08
+    },
+    "issues": [
+      "Frequent flooding disrupts corridor performance",
+      "Port-bound freight mixes with CBD commuter traffic",
+      "High bus volumes at Koyambedu and T Nagar"
+    ],
+    "recommended_actions": [
+      "Dynamic signal plans triggered by rainfall sensors",
+      "Freight staging and dedicated signal priorities for port routes",
+      "Dedicated bus signal phases in high ridership corridors"
+    ]
+  },
+  {
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "classification": "metro",
+    "population_millions": 11.1,
+    "avg_peak_speed_kmph": 23,
+    "avg_delay_minutes": 37,
+    "vehicle_mix": {
+      "two_wheeler_pct": 0.45,
+      "car_pct": 0.28,
+      "bus_pct": 0.11,
+      "truck_pct": 0.06,
+      "auto_pct": 0.1
+    },
+    "issues": [
+      "Cyberabad tech parks generate evening outbound surges",
+      "Bottleneck at PVNR Expressway access ramps",
+      "Mixed traffic on ORR service roads"
+    ],
+    "recommended_actions": [
+      "Ramp metering with adaptive signals nearing ORR access",
+      "Flexible offsets tuned for IT corridor shift changes",
+      "Integration with metro feeder schedules"
+    ]
+  },
+  {
+    "city": "Pune",
+    "state": "Maharashtra",
+    "classification": "tier_1",
+    "population_millions": 7.6,
+    "avg_peak_speed_kmph": 24,
+    "avg_delay_minutes": 35,
+    "vehicle_mix": {
+      "two_wheeler_pct": 0.52,
+      "car_pct": 0.28,
+      "bus_pct": 0.08,
+      "truck_pct": 0.05,
+      "auto_pct": 0.07
+    },
+    "issues": [
+      "Construction diversions on Metro corridors",
+      "High college-area traffic during academic terms",
+      "Unsignalised pedestrian crossings near Deccan"
+    ],
+    "recommended_actions": [
+      "Adaptive phases for temporary diversions",
+      "Academic calendar-based timing adjustments",
+      "Pedestrian call buttons and scramble phases"
+    ]
+  },
+  {
+    "city": "Surat",
+    "state": "Gujarat",
+    "classification": "tier_1",
+    "population_millions": 7.0,
+    "avg_peak_speed_kmph": 27,
+    "avg_delay_minutes": 32,
+    "vehicle_mix": {
+      "two_wheeler_pct": 0.48,
+      "car_pct": 0.27,
+      "bus_pct": 0.09,
+      "truck_pct": 0.07,
+      "auto_pct": 0.09
+    },
+    "issues": [
+      "Diamond market freight merges with ring road commute",
+      "Seasonal monsoon flooding on low-lying junctions",
+      "Limited pedestrian refuge at textile district"
+    ],
+    "recommended_actions": [
+      "Freight-priority windows outside peak commute",
+      "Flood-detection sensors triggering diversions",
+      "Raised medians and adaptive crosswalk signals"
+    ]
+  },
+  {
+    "city": "Lucknow",
+    "state": "Uttar Pradesh",
+    "classification": "tier_1",
+    "population_millions": 4.3,
+    "avg_peak_speed_kmph": 26,
+    "avg_delay_minutes": 33,
+    "vehicle_mix": {
+      "two_wheeler_pct": 0.47,
+      "car_pct": 0.25,
+      "bus_pct": 0.11,
+      "truck_pct": 0.07,
+      "auto_pct": 0.1
+    },
+    "issues": [
+      "Hazratganj and Charbagh junction saturation",
+      "Disorderly lane usage near metro construction",
+      "High share of IPT vehicles at railway station"
+    ],
+    "recommended_actions": [
+      "Adaptive signal coordination along metro feeder routes",
+      "Dedicated lanes for paratransit near station",
+      "Queue detection cameras to reallocate green time"
+    ]
+  },
+  {
+    "city": "Kanpur",
+    "state": "Uttar Pradesh",
+    "classification": "tier_1",
+    "population_millions": 3.5,
+    "avg_peak_speed_kmph": 25,
+    "avg_delay_minutes": 34,
+    "vehicle_mix": {
+      "two_wheeler_pct": 0.5,
+      "car_pct": 0.24,
+      "bus_pct": 0.1,
+      "truck_pct": 0.06,
+      "auto_pct": 0.1
+    },
+    "issues": [
+      "Industrial freight and commuter traffic clashes on GT Road",
+      "Irregular signal timing due to manual operations",
+      "Pedestrian conflicts at Parade Chauraha"
+    ],
+    "recommended_actions": [
+      "Automated signal plans with freight slotting",
+      "Centralised adaptive control replacing manual overrides",
+      "Countdown timers and refuge islands for pedestrians"
+    ]
+  },
+  {
+    "city": "Jaipur",
+    "state": "Rajasthan",
+    "classification": "tier_1",
+    "population_millions": 4.1,
+    "avg_peak_speed_kmph": 28,
+    "avg_delay_minutes": 30,
+    "vehicle_mix": {
+      "two_wheeler_pct": 0.44,
+      "car_pct": 0.3,
+      "bus_pct": 0.12,
+      "truck_pct": 0.05,
+      "auto_pct": 0.09
+    },
+    "issues": [
+      "Tourist buses crowd heritage core",
+      "Uncontrolled pedestrian flows near Hawa Mahal",
+      "Seasonal fairs increasing mixed traffic"
+    ],
+    "recommended_actions": [
+      "Adaptive tourist corridor timing templates",
+      "Pedestrian-first signals with audio cues",
+      "Integration with event management data feeds"
+    ]
+  },
+  {
+    "city": "Nagpur",
+    "state": "Maharashtra",
+    "classification": "tier_2",
+    "population_millions": 3.1,
+    "avg_peak_speed_kmph": 28,
+    "avg_delay_minutes": 24,
+    "vehicle_mix": {
+      "two_wheeler_pct": 0.52,
+      "car_pct": 0.24,
+      "bus_pct": 0.08,
+      "truck_pct": 0.06,
+      "auto_pct": 0.1
+    },
+    "issues": [
+      "Growing logistics traffic along NH44",
+      "Unsignalised intersections near MIHAN SEZ",
+      "Pedestrian safety gaps around Sitabuldi"
+    ],
+    "recommended_actions": [
+      "Prioritise adaptive signals for freight corridors",
+      "Add detection-based pedestrian crossings in CBD",
+      "Coordinate signals with Metro feeder services"
+    ]
+  },
+  {
+    "city": "Indore",
+    "state": "Madhya Pradesh",
+    "classification": "tier_2",
+    "population_millions": 3.2,
+    "avg_peak_speed_kmph": 27,
+    "avg_delay_minutes": 28,
+    "vehicle_mix": {
+      "two_wheeler_pct": 0.51,
+      "car_pct": 0.27,
+      "bus_pct": 0.09,
+      "truck_pct": 0.05,
+      "auto_pct": 0.08
+    },
+    "issues": [
+      "BRTS corridors require signal priority",
+      "Night freight movements through Rajwada",
+      "Limited lane discipline on AB Road"
+    ],
+    "recommended_actions": [
+      "Transit-signal priority integrated with BRTS headways",
+      "Night-time freight gating with adaptive slots",
+      "AI-based lane infringement detection"
+    ]
+  },
+  {
+    "city": "Coimbatore",
+    "state": "Tamil Nadu",
+    "classification": "tier_2",
+    "population_millions": 2.2,
+    "avg_peak_speed_kmph": 29,
+    "avg_delay_minutes": 27,
+    "vehicle_mix": {
+      "two_wheeler_pct": 0.54,
+      "car_pct": 0.23,
+      "bus_pct": 0.11,
+      "truck_pct": 0.06,
+      "auto_pct": 0.06
+    },
+    "issues": [
+      "Textile logistics causing morning freight peaks",
+      "Educational institutions adding micro-peaks mid-day",
+      "Narrow arterial width limits turning movements"
+    ],
+    "recommended_actions": [
+      "Dynamic turn-pocket management for peak classes",
+      "Campus schedule integration for timing adjustments",
+      "Freight staging yards with signal-linked release"
+    ]
+  },
+  {
+    "city": "Kochi",
+    "state": "Kerala",
+    "classification": "tier_2",
+    "population_millions": 2.8,
+    "avg_peak_speed_kmph": 24,
+    "avg_delay_minutes": 29,
+    "vehicle_mix": {
+      "two_wheeler_pct": 0.45,
+      "car_pct": 0.3,
+      "bus_pct": 0.11,
+      "truck_pct": 0.05,
+      "auto_pct": 0.09
+    },
+    "issues": [
+      "Bridge bottlenecks during port operations",
+      "High auto-rickshaw share causing micro-conflicts",
+      "Seasonal tourist surges overwhelming junctions"
+    ],
+    "recommended_actions": [
+      "Integrate adaptive signals with port dispatch schedules",
+      "Create dedicated auto holding bays near junctions",
+      "Deploy seasonal signal plans for tourism peaks"
+    ]
+  },
+  {
+    "city": "Vizag",
+    "state": "Andhra Pradesh",
+    "classification": "tier_2",
+    "population_millions": 2.6,
+    "avg_peak_speed_kmph": 27,
+    "avg_delay_minutes": 26,
+    "vehicle_mix": {
+      "two_wheeler_pct": 0.49,
+      "car_pct": 0.27,
+      "bus_pct": 0.1,
+      "truck_pct": 0.07,
+      "auto_pct": 0.07
+    },
+    "issues": [
+      "Port freight conflicts with beach road tourism",
+      "Hilly gradients reduce turning speeds",
+      "Dense auto rickshaw presence near RTC complex"
+    ],
+    "recommended_actions": [
+      "Dedicated freight signal windows toward port",
+      "Gradient-compensated green splits",
+      "Auto staging zones with adaptive release"
+    ]
+  },
+  {
+    "city": "Guwahati",
+    "state": "Assam",
+    "classification": "tier_2",
+    "population_millions": 1.8,
+    "avg_peak_speed_kmph": 23,
+    "avg_delay_minutes": 31,
+    "vehicle_mix": {
+      "two_wheeler_pct": 0.53,
+      "car_pct": 0.23,
+      "bus_pct": 0.09,
+      "truck_pct": 0.06,
+      "auto_pct": 0.09
+    },
+    "issues": [
+      "Brahmaputra bridge approaches create directional queues",
+      "Shared lanes for buses and goods vehicles",
+      "Seasonal rains cause approach road degradation"
+    ],
+    "recommended_actions": [
+      "Adaptive tidal flow with contraflow lanes",
+      "Separate bus-priority signals on NH27",
+      "Rain-triggered timing adjustments"
+    ]
+  },
+  {
+    "city": "Udaipur",
+    "state": "Rajasthan",
+    "classification": "tourism_city",
+    "population_millions": 0.8,
+    "avg_peak_speed_kmph": 26,
+    "avg_delay_minutes": 18,
+    "vehicle_mix": {
+      "two_wheeler_pct": 0.41,
+      "car_pct": 0.28,
+      "bus_pct": 0.07,
+      "truck_pct": 0.07,
+      "auto_pct": 0.17
+    },
+    "issues": [
+      "Narrow heritage lanes with mixed traffic",
+      "Night-time tourist traffic around lakes",
+      "Infrequent pedestrian facilities"
+    ],
+    "recommended_actions": [
+      "Deploy adaptive signals with pedestrian-first modes",
+      "Schedule traffic calming measures for evening hours",
+      "Integrate adaptive system with parking guidance"
+    ]
+  },
+  {
+    "city": "Varanasi",
+    "state": "Uttar Pradesh",
+    "classification": "tourism_city",
+    "population_millions": 1.5,
+    "avg_peak_speed_kmph": 22,
+    "avg_delay_minutes": 33,
+    "vehicle_mix": {
+      "two_wheeler_pct": 0.48,
+      "car_pct": 0.22,
+      "bus_pct": 0.08,
+      "truck_pct": 0.05,
+      "auto_pct": 0.17
+    },
+    "issues": [
+      "Pilgrim surges during festivals",
+      "Riverfront access roads extremely narrow",
+      "High IPT share clogging chowks"
+    ],
+    "recommended_actions": [
+      "Dynamic pedestrian-priority phases during rituals",
+      "Shuttle-based access with adaptive staging",
+      "Integrated parking + signal guidance for temple zones"
+    ]
+  },
+  {
+    "city": "Madurai",
+    "state": "Tamil Nadu",
+    "classification": "tourism_city",
+    "population_millions": 1.9,
+    "avg_peak_speed_kmph": 25,
+    "avg_delay_minutes": 29,
+    "vehicle_mix": {
+      "two_wheeler_pct": 0.49,
+      "car_pct": 0.24,
+      "bus_pct": 0.09,
+      "truck_pct": 0.06,
+      "auto_pct": 0.12
+    },
+    "issues": [
+      "Meenakshi temple draws large pilgrim volumes",
+      "Night cargo from flower markets",
+      "Shared space near heritage core"
+    ],
+    "recommended_actions": [
+      "Pilgrim-aware signal plans with crowd sensors",
+      "Freight curfew windows managed via adaptive control",
+      "Pedestrian refuge islands with smart beacons"
+    ]
+  },
+  {
+    "city": "Panaji",
+    "state": "Goa",
+    "classification": "tourism_city",
+    "population_millions": 0.16,
+    "avg_peak_speed_kmph": 27,
+    "avg_delay_minutes": 20,
+    "vehicle_mix": {
+      "two_wheeler_pct": 0.44,
+      "car_pct": 0.29,
+      "bus_pct": 0.1,
+      "truck_pct": 0.05,
+      "auto_pct": 0.12
+    },
+    "issues": [
+      "Seasonal tourist inflows causing erratic peaks",
+      "Bridge approaches to Porvorim get saturated",
+      "Frequent pedestrian crossings near promenade"
+    ],
+    "recommended_actions": [
+      "High-season adaptive plans linked to hotel occupancy",
+      "Queue detection on bridge ramps",
+      "Smart pedestrian beacons on waterfront"
+    ]
+  },
+  {
+    "city": "Silvassa",
+    "state": "Dadra and Nagar Haveli",
+    "classification": "industrial_town",
+    "population_millions": 0.12,
+    "avg_peak_speed_kmph": 32,
+    "avg_delay_minutes": 17,
+    "vehicle_mix": {
+      "two_wheeler_pct": 0.38,
+      "car_pct": 0.22,
+      "bus_pct": 0.07,
+      "truck_pct": 0.25,
+      "auto_pct": 0.08
+    },
+    "issues": [
+      "Logistics trucks dominate morning peaks",
+      "Shifts overlap at large industrial estates",
+      "Limited pedestrian facilities for workers"
+    ],
+    "recommended_actions": [
+      "Truck-priority adaptive signals on estate corridors",
+      "Shift change scheduling feeds into signal planner",
+      "Worker shuttle staging with protected crossings"
+    ]
+  },
+  {
+    "city": "Jamshedpur",
+    "state": "Jharkhand",
+    "classification": "industrial_town",
+    "population_millions": 1.3,
+    "avg_peak_speed_kmph": 30,
+    "avg_delay_minutes": 24,
+    "vehicle_mix": {
+      "two_wheeler_pct": 0.47,
+      "car_pct": 0.21,
+      "bus_pct": 0.09,
+      "truck_pct": 0.17,
+      "auto_pct": 0.06
+    },
+    "issues": [
+      "Steel plant freight overlaps with city traffic",
+      "High two-wheeler share in residential areas",
+      "Manual signal control leads to irregular splits"
+    ],
+    "recommended_actions": [
+      "Freight corridor signal pre-emption",
+      "Neighbourhood-level adaptive timing",
+      "Centralised adaptive controller replacing manual mode"
+    ]
+  },
+  {
+    "city": "Bhubaneswar",
+    "state": "Odisha",
+    "classification": "smart_city",
+    "population_millions": 1.1,
+    "avg_peak_speed_kmph": 29,
+    "avg_delay_minutes": 27,
+    "vehicle_mix": {
+      "two_wheeler_pct": 0.52,
+      "car_pct": 0.23,
+      "bus_pct": 0.1,
+      "truck_pct": 0.06,
+      "auto_pct": 0.09
+    },
+    "issues": [
+      "IT-SEZ commuting adds directional peaks",
+      "Airport approach road congestion",
+      "High share of school buses in morning peak"
+    ],
+    "recommended_actions": [
+      "Adaptive school-hour timing templates",
+      "Airport corridor signal coordination",
+      "Integration with smart city command centre feeds"
+    ]
+  },
+  {
+    "city": "Dehradun",
+    "state": "Uttarakhand",
+    "classification": "hill_city",
+    "population_millions": 0.9,
+    "avg_peak_speed_kmph": 22,
+    "avg_delay_minutes": 31,
+    "vehicle_mix": {
+      "two_wheeler_pct": 0.51,
+      "car_pct": 0.26,
+      "bus_pct": 0.09,
+      "truck_pct": 0.05,
+      "auto_pct": 0.09
+    },
+    "issues": [
+      "Steep gradients reduce discharge rates",
+      "Tourist weekend surges onto Rajpur Road",
+      "School traffic clogs narrow roads"
+    ],
+    "recommended_actions": [
+      "Gradient-aware adaptive green splits",
+      "Tourist inflow detection using hotel data",
+      "School-time signal priority for buses"
+    ]
+  },
+  {
+    "city": "Shimla",
+    "state": "Himachal Pradesh",
+    "classification": "hill_city",
+    "population_millions": 0.25,
+    "avg_peak_speed_kmph": 18,
+    "avg_delay_minutes": 34,
+    "vehicle_mix": {
+      "two_wheeler_pct": 0.37,
+      "car_pct": 0.33,
+      "bus_pct": 0.1,
+      "truck_pct": 0.07,
+      "auto_pct": 0.13
+    },
+    "issues": [
+      "Narrow serpentine roads with hairpin turns",
+      "Tourist buses stall on steep approaches",
+      "Limited staging space near Mall Road"
+    ],
+    "recommended_actions": [
+      "Adaptive one-way tidal flow during peaks",
+      "Real-time grade sensor feedback for timing",
+      "Smart parking with signal-linked releases"
+    ]
+  },
+  {
+    "city": "Thrissur",
+    "state": "Kerala",
+    "classification": "cultural_town",
+    "population_millions": 0.32,
+    "avg_peak_speed_kmph": 25,
+    "avg_delay_minutes": 27,
+    "vehicle_mix": {
+      "two_wheeler_pct": 0.43,
+      "car_pct": 0.27,
+      "bus_pct": 0.14,
+      "truck_pct": 0.06,
+      "auto_pct": 0.1
+    },
+    "issues": [
+      "Festival traffic during Pooram overwhelms core",
+      "Railway gate closures stack vehicles",
+      "Feeder roads too narrow for buses"
+    ],
+    "recommended_actions": [
+      "Festival event data integrated with signal plans",
+      "Railway gate status triggers adaptive reroutes",
+      "Mini-bus signal priority on narrow feeders"
+    ]
+  },
+  {
+    "city": "Nashik",
+    "state": "Maharashtra",
+    "classification": "tier_2",
+    "population_millions": 2.5,
+    "avg_peak_speed_kmph": 26,
+    "avg_delay_minutes": 30,
+    "vehicle_mix": {
+      "two_wheeler_pct": 0.48,
+      "car_pct": 0.26,
+      "bus_pct": 0.1,
+      "truck_pct": 0.08,
+      "auto_pct": 0.08
+    },
+    "issues": [
+      "Wine tourism weekends overload highways",
+      "Freight from industrial estates merges with pilgrims",
+      "Manual signal overrides reduce efficiency"
+    ],
+    "recommended_actions": [
+      "Weekend tourism-aware timings",
+      "Dedicated freight windows coordinated with estates",
+      "Central monitoring to prevent manual drift"
+    ]
+  },
+  {
+    "city": "Ranchi",
+    "state": "Jharkhand",
+    "classification": "tier_2",
+    "population_millions": 1.6,
+    "avg_peak_speed_kmph": 24,
+    "avg_delay_minutes": 29,
+    "vehicle_mix": {
+      "two_wheeler_pct": 0.5,
+      "car_pct": 0.23,
+      "bus_pct": 0.1,
+      "truck_pct": 0.07,
+      "auto_pct": 0.1
+    },
+    "issues": [
+      "College traffic creates sharp morning peaks",
+      "Freight movement to industrial areas shares urban corridors",
+      "Irregular traffic enforcement at key junctions"
+    ],
+    "recommended_actions": [
+      "Adaptive scheduling keyed to academic calendar",
+      "Dedicated freight loops with signal priority",
+      "ANPR-based enforcement integration"
+    ]
+  },
+  {
+    "city": "Agartala",
+    "state": "Tripura",
+    "classification": "state_capital",
+    "population_millions": 0.52,
+    "avg_peak_speed_kmph": 24,
+    "avg_delay_minutes": 31,
+    "vehicle_mix": {
+      "two_wheeler_pct": 0.51,
+      "car_pct": 0.22,
+      "bus_pct": 0.09,
+      "truck_pct": 0.07,
+      "auto_pct": 0.11
+    },
+    "issues": [
+      "Railway gate closures disrupt arterial flow",
+      "High IPT dependency for last-mile",
+      "Limited off-street parking pushes vehicles on carriageway"
+    ],
+    "recommended_actions": [
+      "Railway gate integration with adaptive detours",
+      "Paratransit staging with signal metering",
+      "Smart parking alerts tied to signals"
+    ]
+  },
+  {
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "classification": "metro",
+    "population_millions": 14.1,
+    "avg_peak_speed_kmph": 16,
+    "avg_delay_minutes": 55,
+    "vehicle_mix": {
+      "two_wheeler_pct": 0.33,
+      "car_pct": 0.28,
+      "bus_pct": 0.19,
+      "truck_pct": 0.07,
+      "auto_pct": 0.13
+    },
+    "issues": [
+      "Howrah bridge approach saturated during peak ferries",
+      "Tram corridor sharing reduces throughput",
+      "High bus density in Esplanade slows phases"
+    ],
+    "recommended_actions": [
+      "Adaptive transit-priority near central business district",
+      "Dynamic ferry-arrival linked signal plans",
+      "Queue detection cameras on bridge ramps"
+    ]
+  },
+  {
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "classification": "tier_1",
+    "population_millions": 8.8,
+    "avg_peak_speed_kmph": 24,
+    "avg_delay_minutes": 36,
+    "vehicle_mix": {
+      "two_wheeler_pct": 0.46,
+      "car_pct": 0.31,
+      "bus_pct": 0.08,
+      "truck_pct": 0.05,
+      "auto_pct": 0.1
+    },
+    "issues": [
+      "Ring road freight mixes with BRTS",
+      "Sabarmati riverfront events spike evening congestion",
+      "Manual overrides on SG Highway signals"
+    ],
+    "recommended_actions": [
+      "Freight gating aligned with GIDC schedules",
+      "Event calendar-driven signal templates",
+      "Central adaptive control to limit manual overrides"
+    ]
+  },
+  {
+    "city": "Patna",
+    "state": "Bihar",
+    "classification": "tier_1",
+    "population_millions": 3.2,
+    "avg_peak_speed_kmph": 22,
+    "avg_delay_minutes": 40,
+    "vehicle_mix": {
+      "two_wheeler_pct": 0.48,
+      "car_pct": 0.24,
+      "bus_pct": 0.1,
+      "truck_pct": 0.06,
+      "auto_pct": 0.12
+    },
+    "issues": [
+      "Ganga river bridges create directional queues",
+      "Hajipur industrial freight enters CBD",
+      "High IPT dependence around railway station"
+    ],
+    "recommended_actions": [
+      "Adaptive tidal flow on bridge approaches",
+      "Freight staging yards with signal-linked release",
+      "Dedicated IPT bays with metered entry"
+    ]
+  },
+  {
+    "city": "Noida",
+    "state": "Uttar Pradesh",
+    "classification": "tier_1",
+    "population_millions": 1.1,
+    "avg_peak_speed_kmph": 26,
+    "avg_delay_minutes": 34,
+    "vehicle_mix": {
+      "two_wheeler_pct": 0.44,
+      "car_pct": 0.37,
+      "bus_pct": 0.08,
+      "truck_pct": 0.04,
+      "auto_pct": 0.07
+    },
+    "issues": [
+      "IT Parks in Sector 62 generate time-of-day surges",
+      "Noida-Greater Noida expressway ramps crowd",
+      "Metro feeder autos dwell on carriageway"
+    ],
+    "recommended_actions": [
+      "Corporate shift-based signal adjustments",
+      "Ramp metering at expressway interchanges",
+      "Dedicated feeder staging zones"
+    ]
+  },
+  {
+    "city": "Gurugram",
+    "state": "Haryana",
+    "classification": "tier_1",
+    "population_millions": 1.0,
+    "avg_peak_speed_kmph": 20,
+    "avg_delay_minutes": 44,
+    "vehicle_mix": {
+      "two_wheeler_pct": 0.42,
+      "car_pct": 0.4,
+      "bus_pct": 0.06,
+      "truck_pct": 0.05,
+      "auto_pct": 0.07
+    },
+    "issues": [
+      "Cyber City outbound queues every evening",
+      "NH48 service roads overloaded with cabs",
+      "Frequent rainfall ponding reduces discharge"
+    ],
+    "recommended_actions": [
+      "Dynamic green sharing for cab-dominated corridors",
+      "Rain-triggered signal plans with detour VMS",
+      "Ride-hailing staging lots integrated with signals"
+    ]
+  },
+  {
+    "city": "Ghaziabad",
+    "state": "Uttar Pradesh",
+    "classification": "tier_1",
+    "population_millions": 2.4,
+    "avg_peak_speed_kmph": 23,
+    "avg_delay_minutes": 38,
+    "vehicle_mix": {
+      "two_wheeler_pct": 0.47,
+      "car_pct": 0.3,
+      "bus_pct": 0.08,
+      "truck_pct": 0.07,
+      "auto_pct": 0.08
+    },
+    "issues": [
+      "Anand Vihar border gridlocks",
+      "Freight from industrial belts crosses residential stretches",
+      "Shared auto stands spill into junctions"
+    ],
+    "recommended_actions": [
+      "Coordinated border signal control with Delhi",
+      "Night freight windows aligned to industrial parks",
+      "Smart queuing for paratransit near metro nodes"
+    ]
+  },
+  {
+    "city": "Thane",
+    "state": "Maharashtra",
+    "classification": "tier_1",
+    "population_millions": 2.0,
+    "avg_peak_speed_kmph": 21,
+    "avg_delay_minutes": 41,
+    "vehicle_mix": {
+      "two_wheeler_pct": 0.45,
+      "car_pct": 0.32,
+      "bus_pct": 0.1,
+      "truck_pct": 0.05,
+      "auto_pct": 0.08
+    },
+    "issues": [
+      "Eastern Express Highway junctions spill into city grid",
+      "Rail commuters create pedestrian surges at Kopri",
+      "Lake-city events add night-time congestion"
+    ],
+    "recommended_actions": [
+      "Adaptive offset plans tied to Mumbai inbound volumes",
+      "Pedestrian scramble phases at station junctions",
+      "Event-aware timing with crowd sensors"
+    ]
+  },
+  {
+    "city": "Navi Mumbai",
+    "state": "Maharashtra",
+    "classification": "tier_1",
+    "population_millions": 1.5,
+    "avg_peak_speed_kmph": 27,
+    "avg_delay_minutes": 33,
+    "vehicle_mix": {
+      "two_wheeler_pct": 0.43,
+      "car_pct": 0.35,
+      "bus_pct": 0.1,
+      "truck_pct": 0.05,
+      "auto_pct": 0.07
+    },
+    "issues": [
+      "JNPT freight plies through CBD Belapur",
+      "Nerul-Palm Beach seasonal tourist flows",
+      "Parked school buses along arterial reduce capacity"
+    ],
+    "recommended_actions": [
+      "Freight-priority signals on port corridors",
+      "Seasonal timing modes for coastal stretch",
+      "Geofenced school-bus dwell management"
+    ]
+  },
+  {
+    "city": "Bhopal",
+    "state": "Madhya Pradesh",
+    "classification": "tier_2",
+    "population_millions": 2.3,
+    "avg_peak_speed_kmph": 25,
+    "avg_delay_minutes": 32,
+    "vehicle_mix": {
+      "two_wheeler_pct": 0.52,
+      "car_pct": 0.25,
+      "bus_pct": 0.08,
+      "truck_pct": 0.06,
+      "auto_pct": 0.09
+    },
+    "issues": [
+      "VIP road closures reroute bulk traffic",
+      "BRTS corridor intersections need priority",
+      "Monsoon waterlogging near New Market"
+    ],
+    "recommended_actions": [
+      "Adaptive re-routing templates for VIP closures",
+      "Transit signal priority on BRTS",
+      "Waterlogging sensors tied to timing adjustments"
+    ]
+  },
+  {
+    "city": "Vadodara",
+    "state": "Gujarat",
+    "classification": "tier_2",
+    "population_millions": 2.1,
+    "avg_peak_speed_kmph": 27,
+    "avg_delay_minutes": 29,
+    "vehicle_mix": {
+      "two_wheeler_pct": 0.5,
+      "car_pct": 0.27,
+      "bus_pct": 0.09,
+      "truck_pct": 0.06,
+      "auto_pct": 0.08
+    },
+    "issues": [
+      "Industrial freight from Halol mixes with urban traffic",
+      "Bridge maintenance on Vishwamitri causes diversions",
+      "High festival inflow near palace grounds"
+    ],
+    "recommended_actions": [
+      "Freight slotting and adaptive detours",
+      "Real-time work zone signal plans",
+      "Event triggered green splits"
+    ]
+  },
+  {
+    "city": "Ludhiana",
+    "state": "Punjab",
+    "classification": "industrial_town",
+    "population_millions": 1.8,
+    "avg_peak_speed_kmph": 23,
+    "avg_delay_minutes": 34,
+    "vehicle_mix": {
+      "two_wheeler_pct": 0.48,
+      "car_pct": 0.22,
+      "bus_pct": 0.1,
+      "truck_pct": 0.13,
+      "auto_pct": 0.07
+    },
+    "issues": [
+      "Freight from industrial estates clogs GT Road",
+      "High two-wheeler share violates lane discipline",
+      "Market areas spill vendors into carriageway"
+    ],
+    "recommended_actions": [
+      "Truck-priority adaptive signals",
+      "ANPR-based enforcement for lane discipline",
+      "Vendor bay zoning linked to signals"
+    ]
+  },
+  {
+    "city": "Amritsar",
+    "state": "Punjab",
+    "classification": "tourism_city",
+    "population_millions": 1.3,
+    "avg_peak_speed_kmph": 24,
+    "avg_delay_minutes": 31,
+    "vehicle_mix": {
+      "two_wheeler_pct": 0.45,
+      "car_pct": 0.25,
+      "bus_pct": 0.09,
+      "truck_pct": 0.08,
+      "auto_pct": 0.13
+    },
+    "issues": [
+      "Golden Temple pilgrims surge at dawn/dusk",
+      "Wagah border event traffic overlaps commuter peak",
+      "Heritage street vendors invade slow lanes"
+    ],
+    "recommended_actions": [
+      "Pilgrim-aware signal timing with crowd sensors",
+      "Border ceremony schedule integration",
+      "Smart vendor permitting tied to traffic density"
+    ]
+  },
+  {
+    "city": "Bhilai-Durg",
+    "state": "Chhattisgarh",
+    "classification": "industrial_town",
+    "population_millions": 1.1,
+    "avg_peak_speed_kmph": 26,
+    "avg_delay_minutes": 28,
+    "vehicle_mix": {
+      "two_wheeler_pct": 0.44,
+      "car_pct": 0.2,
+      "bus_pct": 0.1,
+      "truck_pct": 0.2,
+      "auto_pct": 0.06
+    },
+    "issues": [
+      "Steel plant shift change creates synchronized peaks",
+      "Heavy trucks spill onto residential arterials",
+      "At-grade rail crossings stack vehicles"
+    ],
+    "recommended_actions": [
+      "Shift-based adaptive green windows",
+      "Dedicated freight corridors with signal pre-emption",
+      "Rail crossing integration with central controller"
+    ]
+  },
+  {
+    "city": "Raipur",
+    "state": "Chhattisgarh",
+    "classification": "smart_city",
+    "population_millions": 1.6,
+    "avg_peak_speed_kmph": 25,
+    "avg_delay_minutes": 30,
+    "vehicle_mix": {
+      "two_wheeler_pct": 0.5,
+      "car_pct": 0.24,
+      "bus_pct": 0.1,
+      "truck_pct": 0.07,
+      "auto_pct": 0.09
+    },
+    "issues": [
+      "VIP movements frequently disrupt MG Road",
+      "Wholesale markets spill onto carriageway",
+      "Bus depot egress reduces approach capacity"
+    ],
+    "recommended_actions": [
+      "VIP event timing integration",
+      "Smart loading-bay scheduling",
+      "Dedicated bus release phases"
+    ]
+  },
+  {
+    "city": "Gwalior",
+    "state": "Madhya Pradesh",
+    "classification": "tier_2",
+    "population_millions": 1.2,
+    "avg_peak_speed_kmph": 27,
+    "avg_delay_minutes": 29,
+    "vehicle_mix": {
+      "two_wheeler_pct": 0.51,
+      "car_pct": 0.23,
+      "bus_pct": 0.09,
+      "truck_pct": 0.07,
+      "auto_pct": 0.1
+    },
+    "issues": [
+      "Narrow heritage corridors limit turning",
+      "Pilgrim influx during fairs",
+      "Rail overbridge works cause detours"
+    ],
+    "recommended_actions": [
+      "Adaptive turn-pocket management",
+      "Event-aware timing templates",
+      "Work-zone signal coordination"
+    ]
+  },
+  {
+    "city": "Aurangabad",
+    "state": "Maharashtra",
+    "classification": "tier_2",
+    "population_millions": 1.4,
+    "avg_peak_speed_kmph": 26,
+    "avg_delay_minutes": 31,
+    "vehicle_mix": {
+      "two_wheeler_pct": 0.49,
+      "car_pct": 0.25,
+      "bus_pct": 0.1,
+      "truck_pct": 0.08,
+      "auto_pct": 0.08
+    },
+    "issues": [
+      "Industrial freight overlaps with tourist traffic",
+      "Chronic encroachment near old city",
+      "Night-time pilgrim buses along highway"
+    ],
+    "recommended_actions": [
+      "Freight curfew slots with adaptive release",
+      "Encroachment detection cameras feeding controller",
+      "Night bus signal priority"
+    ]
+  },
+  {
+    "city": "Vijayawada",
+    "state": "Andhra Pradesh",
+    "classification": "tier_2",
+    "population_millions": 2.0,
+    "avg_peak_speed_kmph": 25,
+    "avg_delay_minutes": 33,
+    "vehicle_mix": {
+      "two_wheeler_pct": 0.47,
+      "car_pct": 0.26,
+      "bus_pct": 0.11,
+      "truck_pct": 0.08,
+      "auto_pct": 0.08
+    },
+    "issues": [
+      "Krishna barrage traffic merges with NH16",
+      "Pandemic-era bus bays now on carriageway",
+      "Frequent VIP visits impact signal timings"
+    ],
+    "recommended_actions": [
+      "Adaptive coordination on NH16 approaches",
+      "Dedicated off-street bus bays",
+      "VIP calendar integration with controller"
+    ]
+  },
+  {
+    "city": "Tirupati",
+    "state": "Andhra Pradesh",
+    "classification": "pilgrim_city",
+    "population_millions": 0.5,
+    "avg_peak_speed_kmph": 23,
+    "avg_delay_minutes": 35,
+    "vehicle_mix": {
+      "two_wheeler_pct": 0.41,
+      "car_pct": 0.24,
+      "bus_pct": 0.15,
+      "truck_pct": 0.06,
+      "auto_pct": 0.14
+    },
+    "issues": [
+      "Pilgrim bus convoys cause platoon arrivals",
+      "Hill-road return traffic saturates city",
+      "Shared autos congregate near temple exits"
+    ],
+    "recommended_actions": [
+      "Convoy-aware signal sequencing",
+      "Contraflow plans for downhill traffic",
+      "Auto staging zones with metered exits"
+    ]
+  },
+  {
+    "city": "Salem",
+    "state": "Tamil Nadu",
+    "classification": "tier_2",
+    "population_millions": 1.1,
+    "avg_peak_speed_kmph": 28,
+    "avg_delay_minutes": 28,
+    "vehicle_mix": {
+      "two_wheeler_pct": 0.54,
+      "car_pct": 0.23,
+      "bus_pct": 0.09,
+      "truck_pct": 0.08,
+      "auto_pct": 0.06
+    },
+    "issues": [
+      "NH44 freight meets city belts",
+      "Textile markets occupy curb space",
+      "Hill tourist weekends create sudden peaks"
+    ],
+    "recommended_actions": [
+      "Freight bypass signal priority",
+      "Dynamic curb management cameras",
+      "Tourism-aware timing presets"
+    ]
+  },
+  {
+    "city": "Meerut",
+    "state": "Uttar Pradesh",
+    "classification": "tier_2",
+    "population_millions": 1.5,
+    "avg_peak_speed_kmph": 24,
+    "avg_delay_minutes": 32,
+    "vehicle_mix": {
+      "two_wheeler_pct": 0.5,
+      "car_pct": 0.24,
+      "bus_pct": 0.1,
+      "truck_pct": 0.07,
+      "auto_pct": 0.09
+    },
+    "issues": [
+      "Delhi-Meerut Expressway ramp congestion",
+      "Sports goods freight overlaps commuter traffic",
+      "High IPT share near cantonment"
+    ],
+    "recommended_actions": [
+      "Ramp metering with adaptive timings",
+      "Freight slotting tied to industrial clusters",
+      "Paratransit geofencing around sensitive zones"
+    ]
+  },
+  {
+    "city": "Chandigarh",
+    "state": "Chandigarh",
+    "classification": "tier_2",
+    "population_millions": 1.1,
+    "avg_peak_speed_kmph": 27,
+    "avg_delay_minutes": 31,
+    "vehicle_mix": {
+      "two_wheeler_pct": 0.43,
+      "car_pct": 0.34,
+      "bus_pct": 0.1,
+      "truck_pct": 0.05,
+      "auto_pct": 0.08
+    },
+    "issues": [
+      "Sectors 17 and 43 bus interchanges create tidal peaks",
+      "Roundabout queues spill back onto arterial approaches",
+      "Mohali commuter surge overwhelms evening outbound lanes"
+    ],
+    "recommended_actions": [
+      "Adaptive phasing synchronised with ISBT arrival boards",
+      "Queue detection loops to resequence roundabout inflows",
+      "BRT-style bus priority for airport and tech park corridors"
+    ]
+  },
+  {
+    "city": "Faridabad",
+    "state": "Haryana",
+    "classification": "tier_1",
+    "population_millions": 1.4,
+    "avg_peak_speed_kmph": 24,
+    "avg_delay_minutes": 36,
+    "vehicle_mix": {"two_wheeler_pct": 0.47, "car_pct": 0.32, "bus_pct": 0.07, "truck_pct": 0.07, "auto_pct": 0.07},
+    "issues": [
+      "Delhi border queues at Badarpur",
+      "Industrial estate freight overlaps with commuters",
+      "Manual overrides at key junctions"
+    ],
+    "recommended_actions": [
+      "Coordinated control with Delhi entry points",
+      "Freight-priority windows for industrial corridors",
+      "Centralised adaptive timings to curb manual drift"
+    ]
+  },
+  {
+    "city": "Prayagraj",
+    "state": "Uttar Pradesh",
+    "classification": "state_capital",
+    "population_millions": 1.6,
+    "avg_peak_speed_kmph": 23,
+    "avg_delay_minutes": 38,
+    "vehicle_mix": {"two_wheeler_pct": 0.5, "car_pct": 0.25, "bus_pct": 0.09, "truck_pct": 0.06, "auto_pct": 0.1},
+    "issues": [
+      "Sangam festival surges overwhelm city core",
+      "Railway crossings stack vehicles",
+      "Shared autos dwell near civil lines"
+    ],
+    "recommended_actions": [
+      "Event-aware signal plans for mela periods",
+      "Rail gate integration to trigger detours",
+      "Paratransit staging zones with metered release"
+    ]
+  },
+  {
+    "city": "Dhanbad",
+    "state": "Jharkhand",
+    "classification": "industrial_town",
+    "population_millions": 1.2,
+    "avg_peak_speed_kmph": 25,
+    "avg_delay_minutes": 34,
+    "vehicle_mix": {"two_wheeler_pct": 0.48, "car_pct": 0.22, "bus_pct": 0.1, "truck_pct": 0.12, "auto_pct": 0.08},
+    "issues": [
+      "Coal corridor trucks enter urban grid",
+      "Irregular signal splits at key junctions",
+      "Encroached shoulders reduce capacity"
+    ],
+    "recommended_actions": [
+      "Freight bypass and priority signals",
+      "Central control to stabilise cycle lengths",
+      "Curb management enforcement via cameras"
+    ]
+  },
+  {
+    "city": "Asansol",
+    "state": "West Bengal",
+    "classification": "industrial_town",
+    "population_millions": 1.3,
+    "avg_peak_speed_kmph": 25,
+    "avg_delay_minutes": 33,
+    "vehicle_mix": {"two_wheeler_pct": 0.44, "car_pct": 0.26, "bus_pct": 0.11, "truck_pct": 0.11, "auto_pct": 0.08},
+    "issues": [
+      "Freight from coalfields overlaps peak commuter demand",
+      "Bridge maintenance triggers detours",
+      "Market-area parking spillover"
+    ],
+    "recommended_actions": [
+      "Time-windowed freight signal priority",
+      "Work-zone adaptive detour plans",
+      "Automated parking enforcement near bazaars"
+    ]
+  },
+  {
+    "city": "Rajkot",
+    "state": "Gujarat",
+    "classification": "tier_2",
+    "population_millions": 1.6,
+    "avg_peak_speed_kmph": 26,
+    "avg_delay_minutes": 31,
+    "vehicle_mix": {"two_wheeler_pct": 0.5, "car_pct": 0.27, "bus_pct": 0.08, "truck_pct": 0.06, "auto_pct": 0.09},
+    "issues": [
+      "Ring road merges create intermittent queues",
+      "Festival peaks in old city",
+      "High two-wheeler mix affects discharge"
+    ],
+    "recommended_actions": [
+      "Coordinated corridors with offset optimisation",
+      "Festival-aware timing templates",
+      "Lane discipline enforcement using cameras"
+    ]
+  },
+  {
+    "city": "Warangal",
+    "state": "Telangana",
+    "classification": "tier_2",
+    "population_millions": 1.1,
+    "avg_peak_speed_kmph": 27,
+    "avg_delay_minutes": 29,
+    "vehicle_mix": {"two_wheeler_pct": 0.52, "car_pct": 0.23, "bus_pct": 0.11, "truck_pct": 0.06, "auto_pct": 0.08},
+    "issues": [
+      "Thousand Pillar Temple area pedestrian surges",
+      "Mixed traffic on key arterials",
+      "Bus terminus queues spill into junctions"
+    ],
+    "recommended_actions": [
+      "Pedestrian-priority phases at heritage core",
+      "Dynamic splits for mixed-flow corridors",
+      "Transit-signal priority near bus hubs"
+    ]
+  },
+  {
+    "city": "Mangaluru",
+    "state": "Karnataka",
+    "classification": "tier_2",
+    "population_millions": 0.7,
+    "avg_peak_speed_kmph": 28,
+    "avg_delay_minutes": 28,
+    "vehicle_mix": {"two_wheeler_pct": 0.46, "car_pct": 0.3, "bus_pct": 0.12, "truck_pct": 0.05, "auto_pct": 0.07},
+    "issues": [
+      "Port freight merges with city traffic",
+      "Hilly gradients slow turning",
+      "Monsoon waterlogging reduces capacity"
+    ],
+    "recommended_actions": [
+      "Freight-priority windows to/from port",
+      "Grade-aware signal splits",
+      "Rain-triggered timing adjustments"
+    ]
+  },
+  {
+    "city": "Mysuru",
+    "state": "Karnataka",
+    "classification": "tourism_city",
+    "population_millions": 1.0,
+    "avg_peak_speed_kmph": 27,
+    "avg_delay_minutes": 28,
+    "vehicle_mix": {"two_wheeler_pct": 0.45, "car_pct": 0.31, "bus_pct": 0.1, "truck_pct": 0.05, "auto_pct": 0.09},
+    "issues": [
+      "Palace-area pedestrian surges",
+      "Festival traffic during Dasara",
+      "Tourist buses near zoo and palace"
+    ],
+    "recommended_actions": [
+      "Pedestrian-first phases at tourist nodes",
+      "Event calendar-linked signal plans",
+      "Bus-priority windows for key corridors"
+    ]
+  },
+  {
+    "city": "Guntur",
+    "state": "Andhra Pradesh",
+    "classification": "tier_2",
+    "population_millions": 0.9,
+    "avg_peak_speed_kmph": 26,
+    "avg_delay_minutes": 30,
+    "vehicle_mix": {"two_wheeler_pct": 0.5, "car_pct": 0.24, "bus_pct": 0.11, "truck_pct": 0.06, "auto_pct": 0.09},
+    "issues": [
+      "NH16 merge queues",
+      "Market freight overlaps peak",
+      "School traffic micro-peaks"
+    ],
+    "recommended_actions": [
+      "Adaptive coordination on highway approaches",
+      "Freight staging with signal-linked release",
+      "School-hour timing templates"
+    ]
+  },
+  {
+    "city": "Tiruchirappalli",
+    "state": "Tamil Nadu",
+    "classification": "tier_2",
+    "population_millions": 1.0,
+    "avg_peak_speed_kmph": 27,
+    "avg_delay_minutes": 30,
+    "vehicle_mix": {"two_wheeler_pct": 0.49, "car_pct": 0.26, "bus_pct": 0.11, "truck_pct": 0.06, "auto_pct": 0.08},
+    "issues": [
+      "Rockfort area pedestrian/cycle conflicts",
+      "Cauvery bridge approaches saturate",
+      "High share of IPT near bus stands"
+    ],
+    "recommended_actions": [
+      "Ped/bike priority signals near heritage core",
+      "Tidal flow plans for bridge approaches",
+      "Paratransit staging with metered entry"
+    ]
+  }
+]

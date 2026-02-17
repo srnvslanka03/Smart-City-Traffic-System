@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% set title = "City Insights" %}
+
+{% block hero %}
+<div class="hero hero-compact">
+  <div class="hero-left">
+    <h1>CITY INSIGHTS</h1>
+    <p class="hero-subtitle">
+      Highlighting congestion hot spots across India and how the adaptive traffic system helps.
+    </p>
+  </div>
+</div>
+{% endblock %}
+
+{% block main %}
+<main class="cities-main">
+  <section class="card city-search-card">
+    <h2>Discover where adaptive signalling has the biggest impact</h2>
+    <p class="card-subtitle">
+      Use the search below to explore metros, tier-2 cities, and tourism hubs across India. Every
+      city card shows congestion pain points, enforcement gaps, and how our system closes them with
+      dynamic, data-driven control.
+    </p>
+    <form id="citySearchForm" class="city-search-form">
+      <input id="citySearchInput" type="search" placeholder="Search by city, state, or type" />
+      <button type="submit">Search</button>
+    </form>
+    <div class="city-search-meta">
+      <span id="citySearchCount">Showing featured cities</span>
+      <span class="badge live-data">Live recommendations</span>
+    </div>
+  </section>
+
+  <section class="city-featured" id="cityResults">
+    <!-- JS populates cards here -->
+  </section>
+
+  <section class="card city-cta">
+    <div>
+      <h2>Why cities adopt this platform</h2>
+      <ul>
+        <li>Automates signal plans every second using AI vision and density prediction.</li>
+        <li>Integrates compliance nudges with campaign-ready awareness content.</li>
+        <li>Generates readiness dossiers for grant applications and smart-city tenders.</li>
+      </ul>
+    </div>
+    <div class="cta-buttons">
+      <a class="cta-link" href="{{ url_for('dashboard') }}">Launch Live Dashboard</a>
+      <a class="cta-link" href="{{ url_for('awareness') }}">View Awareness Toolkit</a>
+    </div>
+  </section>
+</main>
+{% endblock %}
+
+{% block body_scripts %}
+{{ super() }}
+<script src="{{ url_for('static', filename='js/cities.js') }}"></script>
+{% endblock %}
+
+

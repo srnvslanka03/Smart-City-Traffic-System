@@ -1,0 +1,297 @@
+{% extends "base.html" %}
+{% set title = "About - Smart City Traffic System" %}
+
+{% block hero %}
+<div class="hero hero-compact">
+  <div class="hero-left">
+    <h1>ABOUT SMART CITY TRAFFIC SYSTEM</h1>
+    <p class="hero-subtitle">
+      Revolutionizing urban traffic management through adaptive signal control and computer vision technology.
+    </p>
+  </div>
+</div>
+{% endblock %}
+
+{% block main %}
+<main class="awareness-main">
+  <section class="card awareness-section">
+    <h2>Our Mission</h2>
+    <p>
+      The Smart City Traffic System is an innovative platform designed to revolutionize urban traffic management through adaptive signal control and computer vision technology. Our system dynamically adjusts traffic light timings based on real-time vehicle detection and density analysis, significantly reducing congestion and improving traffic flow in cities.
+    </p>
+  </section>
+
+  <section class="card awareness-section">
+    <h2>Existing Systems vs Proposed Model</h2>
+    <div class="awareness-grid">
+      <article>
+        <h3>Existing Fixed-Time Signals</h3>
+        <ul class="awareness-list">
+          <li>Static cycle lengths regardless of demand fluctuations.</li>
+          <li>Manual retiming needed; slow to respond to incidents/events.</li>
+          <li>Limited visibility into per-lane performance.</li>
+          <li>Higher average delay and idling emissions.</li>
+        </ul>
+      </article>
+      <article>
+        <h3>Our Adaptive Proposed Model</h3>
+        <ul class="awareness-list">
+          <li>Real-time vision counts and type classification drive signal timing.</li>
+          <li>Dynamic green splits and phase sequencing per-second.</li>
+          <li>Lane-level analytics, throughput and wait-time dashboards.</li>
+          <li>Lower delay, improved throughput, and reduced emissions.</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section class="card awareness-section">
+    <h2>Key Features</h2>
+    <div class="awareness-grid">
+      <article>
+        <h3>Adaptive Signal Control</h3>
+        <p>Traffic lights automatically adjust their timing based on current traffic conditions, prioritizing lanes with higher vehicle density.</p>
+        <span class="badge badge-info">Core Feature</span>
+      </article>
+      <article>
+        <h3>Computer Vision Integration</h3>
+        <p>Uses advanced image processing to detect and classify vehicles (cars, buses, trucks, rickshaws, bikes) in real-time.</p>
+        <span class="badge badge-success">AI-Powered</span>
+      </article>
+      <article>
+        <h3>Data-Driven Decisions</h3>
+        <p>Employs machine learning algorithms to predict traffic patterns and optimize signal timings for maximum efficiency.</p>
+        <span class="badge badge-warning">Predictive</span>
+      </article>
+      <article>
+        <h3>City-Wide Insights</h3>
+        <p>Provides comprehensive analytics on traffic flow, vehicle types, and congestion hotspots across different cities.</p>
+        <span class="badge badge-info">Analytics</span>
+      </article>
+      <article>
+        <h3>Awareness Campaigns</h3>
+        <p>Includes educational content and campaigns to promote better driving habits and compliance with traffic rules.</p>
+        <span class="badge badge-success">Educational</span>
+      </article>
+      <article>
+        <h3>Scalable Platform</h3>
+        <p>Designed to be deployed across multiple cities with customizable parameters for different urban environments.</p>
+        <span class="badge badge-warning">Scalable</span>
+      </article>
+    </div>
+  </section>
+
+  <section class="card awareness-section">
+    <h2>Technology Stack</h2>
+    <ul class="awareness-list">
+      <li>Python for backend logic and AI models</li>
+      <li>Flask web framework for the dashboard</li>
+      <li>Pygame for traffic simulation</li>
+      <li>Modern web technologies (HTML, CSS, JS) for user interface</li>
+      <li>Computer vision libraries for vehicle detection</li>
+    </ul>
+  </section>
+
+  <section class="card awareness-section">
+    <h2>System Information</h2>
+    <div class="awareness-grid">
+      <article>
+        <h3>Hardware Requirements</h3>
+        <ul>
+          <li><strong>CPU:</strong> Intel i5 or equivalent (recommended i7 for real-time processing)</li>
+          <li><strong>RAM:</strong> 8GB minimum, 16GB recommended</li>
+          <li><strong>GPU:</strong> NVIDIA GTX 1050 or better (for CUDA acceleration)</li>
+          <li><strong>Storage:</strong> 50GB free space for models and data</li>
+        </ul>
+      </article>
+      <article>
+        <h3>Software Dependencies</h3>
+        <ul>
+          <li><strong>Python:</strong> 3.8+</li>
+          <li><strong>Flask:</strong> 2.0+</li>
+          <li><strong>OpenCV:</strong> 4.5+</li>
+          <li><strong>PyTorch:</strong> 1.9+ (for YOLO models)</li>
+          <li><strong>Pygame:</strong> 2.0+</li>
+        </ul>
+      </article>
+      <article>
+        <h3>Operating Systems</h3>
+        <ul>
+          <li>Windows 10/11</li>
+          <li>Ubuntu 18.04+</li>
+          <li>macOS 10.15+</li>
+        </ul>
+        <p><em>Note: Linux recommended for production deployment</em></p>
+      </article>
+      <article>
+        <h3>Performance Metrics</h3>
+        <ul>
+          <li><strong>Processing Speed:</strong> 30 FPS on standard hardware</li>
+          <li><strong>Accuracy:</strong> 95%+ vehicle detection rate</li>
+          <li><strong>Latency:</strong> <100ms for signal adjustments</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section class="card awareness-section">
+    <h2>YOLO Model Comparison</h2>
+    <p>Our system supports multiple YOLO (You Only Look Once) models for vehicle detection. Here's a comparison of the available options:</p>
+    <div class="awareness-grid">
+      <article>
+        <h3>YOLOv12</h3>
+        <ul>
+          <li><strong>Pros:</strong> State-of-the-art accuracy, advanced transformer-based architecture, superior performance in complex scenes</li>
+          <li><strong>Cons:</strong> Highest computational requirements, larger model size</li>
+          <li><strong>Use Case:</strong> Cutting-edge applications requiring maximum precision and robustness</li>
+          <li><strong>Size:</strong> ~50MB</li>
+        </ul>
+      </article>
+      <article>
+        <h3>YOLOv5</h3>
+        <ul>
+          <li><strong>Pros:</strong> Fast inference, lightweight, good accuracy</li>
+          <li><strong>Cons:</strong> Slightly lower precision than newer versions</li>
+          <li><strong>Use Case:</strong> Real-time applications with limited resources</li>
+          <li><strong>Size:</strong> ~27MB</li>
+        </ul>
+      </article>
+      <article>
+        <h3>YOLOv8</h3>
+        <ul>
+          <li><strong>Pros:</strong> High accuracy, improved architecture</li>
+          <li><strong>Cons:</strong> Moderate computational requirements</li>
+          <li><strong>Use Case:</strong> High-precision detection in complex environments</li>
+          <li><strong>Size:</strong> ~43MB</li>
+        </ul>
+      </article>
+      <article>
+        <h3>YOLOv7</h3>
+        <ul>
+          <li><strong>Pros:</strong> Balanced performance and accuracy</li>
+          <li><strong>Cons:</strong> Moderate resource usage</li>
+          <li><strong>Use Case:</strong> General-purpose deployment</li>
+          <li><strong>Size:</strong> ~36MB</li>
+        </ul>
+      </article>
+      <article>
+        <h3>YOLOv6</h3>
+        <ul>
+          <li><strong>Pros:</strong> Efficient on edge devices</li>
+          <li><strong>Cons:</strong> Lower accuracy in crowded scenes</li>
+          <li><strong>Use Case:</strong> IoT and embedded systems</li>
+          <li><strong>Size:</strong> ~22MB</li>
+        </ul>
+      </article>
+    </div>
+    <p><em>Current default: YOLOv12 for state-of-the-art accuracy and performance</em></p>
+  </section>
+
+  <section class="card awareness-section">
+    <h2>How It Works</h2>
+    <p>
+      The Smart City Traffic System leverages computer vision algorithms to detect vehicles at intersections in real-time. Using cameras and image processing, it identifies vehicle types and counts, feeding this data into adaptive algorithms that adjust traffic light timings dynamically. This ensures optimal flow by prioritizing busy lanes and reducing unnecessary waiting times.
+    </p>
+    <div class="awareness-grid">
+      <article>
+        <h3>Vehicle Detection</h3>
+        <p>Advanced AI models classify vehicles into categories like cars, buses, trucks, rickshaws, and bikes.</p>
+        <span class="badge badge-success">Accurate</span>
+      </article>
+      <article>
+        <h3>Real-Time Analysis</h3>
+        <p>Data is processed instantly to make decisions on signal changes within seconds.</p>
+        <span class="badge badge-info">Instant</span>
+      </article>
+      <article>
+        <h3>Adaptive Algorithms</h3>
+        <p>Machine learning optimizes timings based on historical and current traffic patterns.</p>
+        <span class="badge badge-warning">Intelligent</span>
+      </article>
+    </div>
+  </section>
+
+  <section class="card awareness-section">
+    <h2>Benefits</h2>
+    <div class="awareness-grid">
+      <article>
+        <h3>Reduced Congestion</h3>
+        <p>Minimizes traffic jams by intelligently distributing green light time based on demand.</p>
+        <span class="badge badge-success">Efficiency</span>
+      </article>
+      <article>
+        <h3>Environmental Impact</h3>
+        <p>Lowers fuel consumption and emissions by reducing idling time at intersections.</p>
+        <span class="badge badge-info">Eco-Friendly</span>
+      </article>
+      <article>
+        <h3>Economic Savings</h3>
+        <p>Saves time and money for commuters and businesses through faster travel.</p>
+        <span class="badge badge-warning">Cost-Effective</span>
+      </article>
+      <article>
+        <h3>Safety Improvements</h3>
+        <p>Reduces accidents by maintaining smoother traffic flow and fewer stop-and-go situations.</p>
+        <span class="badge badge-success">Safe</span>
+      </article>
+      <article>
+        <h3>Scalability</h3>
+        <p>Easily deployable across multiple intersections and cities with minimal infrastructure changes.</p>
+        <span class="badge badge-info">Flexible</span>
+      </article>
+      <article>
+        <h3>Data Insights</h3>
+        <p>Provides valuable analytics for urban planners to make informed decisions on infrastructure.</p>
+        <span class="badge badge-warning">Insightful</span>
+      </article>
+    </div>
+  </section>
+
+  <section class="card awareness-section">
+    <h2>Impact</h2>
+    <p>
+      Our system aims to reduce average travel times, lower fuel consumption, decrease emissions, and enhance overall urban mobility. By making traffic management smarter and more responsive, we contribute to building more livable and sustainable cities.
+    </p>
+    <div class="checklist-grid">
+      <label><input type="checkbox" disabled /> Reduced travel times by up to 30%</label>
+      <label><input type="checkbox" disabled /> Lowered emissions through optimized flow</label>
+      <label><input type="checkbox" disabled /> Improved safety at intersections</label>
+      <label><input type="checkbox" disabled /> Enhanced urban mobility for all</label>
+    </div>
+  </section>
+
+  <section class="card awareness-section">
+    <h2>Our Team</h2>
+    <p>
+      Our dedicated team consists of experts in computer vision, machine learning, software engineering, and urban planning. We are passionate about leveraging technology to solve real-world problems and create smarter cities.
+    </p>
+    <div class="awareness-grid">
+      <article>
+        <h3>AI Engineers</h3>
+        <p>Specialists in developing and training computer vision models for accurate vehicle detection.</p>
+        <span class="badge badge-success">Experts</span>
+      </article>
+      <article>
+        <h3>Software Developers</h3>
+        <p>Building robust web applications and simulation environments using Python and modern frameworks.</p>
+        <span class="badge badge-info">Innovators</span>
+      </article>
+      <article>
+        <h3>Data Scientists</h3>
+        <p>Analyzing traffic data to optimize algorithms and provide predictive insights.</p>
+        <span class="badge badge-warning">Analysts</span>
+      </article>
+    </div>
+  </section>
+
+  <section class="card awareness-cta">
+    <div>
+      <h2>Join the Smart City Initiative</h2>
+      <p>
+        Partner with us to implement adaptive traffic systems in your city. Download resources and get started today.
+      </p>
+    </div>
+    <a class="cta-link" href="/dashboard" target="_blank" rel="noopener">Explore Dashboard</a>
+  </section>
+</main>
+{% endblock %}

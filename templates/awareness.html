@@ -1,0 +1,134 @@
+{% extends "base.html" %}
+{% set title = "Traffic Awareness" %}
+
+{% block hero %}
+<div class="hero hero-compact">
+  <div class="hero-left">
+    <h1>TRAFFIC AWARENESS</h1>
+    <p class="hero-subtitle">
+      Learn Indian traffic signal rules, lane discipline, and penalties so every road user can stay
+      safe.
+    </p>
+  </div>
+</div>
+{% endblock %}
+
+{% block main %}
+<main class="awareness-main">
+  <section class="card awareness-section">
+    <h2>Signal basics</h2>
+    <div class="awareness-grid">
+      <article>
+        <h3>Red</h3>
+        <p>Complete stop behind the stop line. Right-on-red only when explicitly allowed.</p>
+        <span class="badge badge-critical">Penalty: ₹1,000</span>
+      </article>
+      <article>
+        <h3>Yellow / Amber</h3>
+        <p>Prepare to stop. Entering the intersection after amber starts invites challans.</p>
+        <span class="badge badge-warning">Penalty: ₹1,000</span>
+      </article>
+      <article>
+        <h3>Green</h3>
+        <p>Proceed while yielding to emergency vehicles and pedestrians. Respect dedicated turn arrows.</p>
+        <span class="badge badge-info">Precaution: Scan zebra crossing</span>
+      </article>
+    </div>
+  </section>
+
+  <section class="card awareness-section">
+    <h2>Smart mobility tips</h2>
+    <ul class="awareness-list">
+      <li>Use public transport priority lanes; avoid blocking bus bays.</li>
+      <li>Plan trips off-peak; follow dynamic detours on VMS/app guidance.</li>
+      <li>Prefer park-and-ride near metro hubs to cut last-mile congestion.</li>
+      <li>Report faulty signals or encroachments via city grievance apps.</li>
+    </ul>
+  </section>
+
+  <section class="card awareness-section">
+    <h2>Do’s and Don’ts at intersections</h2>
+    <div class="awareness-grid">
+      <article>
+        <h3>Do</h3>
+        <ul class="awareness-list">
+          <li>Stop before the line and keep junction box clear.</li>
+          <li>Follow lane arrows for turns; indicate early.</li>
+          <li>Yield to pedestrians and cyclists in the crossing.</li>
+        </ul>
+      </article>
+      <article>
+        <h3>Don’t</h3>
+        <ul class="awareness-list">
+          <li>Don’t honk or jump amber to beat the signal.</li>
+          <li>Don’t block emergency vehicles.</li>
+          <li>Don’t use phones while approaching a signal.</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section class="card awareness-section">
+    <h2>Emergency etiquette</h2>
+    <ul class="awareness-list">
+      <li>Make way by pulling left; do not tail an ambulance.</li>
+      <li>At red, creep to stop line and leave space for cross flow.</li>
+      <li>Follow traffic police hand signals over signal heads.</li>
+    </ul>
+  </section>
+
+  <section class="card awareness-section">
+    <h2>Right-of-way reminders</h2>
+    <ul class="awareness-list">
+      <li>Always give way to pedestrians already on the zebra crossing.</li>
+      <li>Left lane is for overtaking/turning; keep to the left on multi-lane roads.</li>
+      <li>Emergency vehicles get priority irrespective of the signal state.</li>
+      <li>Two-wheelers should avoid lane splitting near the junction.</li>
+      <li>Use the dedicated bicycle box where provided before the stop line.</li>
+    </ul>
+  </section>
+
+  <section class="card awareness-section">
+    <h2>Penalties (per Motor Vehicles Act)</h2>
+    <div class="awareness-grid">
+      <article>
+        <h3>Signal jump</h3>
+        <p>₹1,000 (cars) / ₹500 (two-wheelers) plus e-challan entry.</p>
+      </article>
+      <article>
+        <h3>Wrong lane / dangerous driving</h3>
+        <p>₹1,500 and/or license suspension.</p>
+      </article>
+      <article>
+        <h3>Blocking pedestrian crossing</h3>
+        <p>₹500 per offence plus demerit points.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="card awareness-section awareness-checklist">
+    <h2>Intersection safety checklist</h2>
+    <div class="checklist-grid">
+      <label><input type="checkbox" disabled /> Helmet/seatbelt fastened</label>
+      <label><input type="checkbox" disabled /> Stop before the line, not on it</label>
+      <label><input type="checkbox" disabled /> Watch for pedestrians and cyclists</label>
+      <label><input type="checkbox" disabled /> Keep mobile devices away while driving</label>
+      <label><input type="checkbox" disabled /> Follow lane markings approaching the signal</label>
+      <label><input type="checkbox" disabled /> Yield to ambulances/fire services</label>
+    </div>
+  </section>
+
+  <section class="card awareness-cta">
+    <div>
+      <h2>Launch awareness campaign</h2>
+      <p>
+        Download ready-to-print posters, social media creatives, and announcement scripts to run a
+        citywide road-safety drive with local traffic police.
+      </p>
+    </div>
+    <a class="cta-link" href="https://morth.nic.in" target="_blank" rel="noopener">Browse official resources</a>
+  </section>
+</main>
+{% endblock %}
+
+

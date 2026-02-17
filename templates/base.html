@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>{{ title or "Smart City Traffic System" }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+    {% block head_scripts %}{% endblock %}
+  </head>
+  <body>
+    <div class="app-root">
+      <header class="app-header">
+        <div class="top-nav">
+          <div class="brand">
+            <div class="brand-icon">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <span class="brand-text">SMART CITY</span>
+          </div>
+          <nav class="nav-links">
+            <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('dashboard') }}">Dashboard</a>
+            <a href="{{ url_for('awareness') }}">Awareness</a>
+            <a href="{{ url_for('cities') }}">City Insights</a>
+            <a href="{{ url_for('resources') }}">Resources</a>
+            <a href="{{ url_for('about') }}">About</a>
+          </nav>
+        </div>
+        {% block hero %}{% endblock %}
+      </header>
+
+      {% block main %}
+      <main class="app-main">
+        {% block content %}{% endblock %}
+      </main>
+      {% endblock %}
+
+      <footer class="app-footer" id="contact">
+        <p>
+          © {{ 2025 }} Smart City Traffic System. Powered by adaptive signal control and computer
+          vision.
+        </p>
+      </footer>
+    </div>
+    {% block body_scripts %}{% endblock %}
+  </body>
+</html>
+
+

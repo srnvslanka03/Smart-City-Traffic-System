@@ -1,0 +1,177 @@
+{% extends "base.html" %}
+
+{% block hero %}
+<div class="hero">
+  <div class="hero-left">
+    <h1>
+      SMART CITY<br />
+      TRAFFIC SYSTEM
+    </h1>
+    <p class="hero-subtitle">
+      Optimize traffic flow and reduce congestion in Indian cities with real-time adaptive
+      signalling, live monitoring, and actionable analytics.
+    </p>
+    <div class="hero-cta-row">
+      <a class="hero-cta" href="{{ url_for('dashboard') }}">Launch Dashboard</a>
+      <a class="hero-cta secondary" href="{{ url_for('cities') }}">Explore City Insights</a>
+    </div>
+    <div class="hero-badges">
+      <span class="badge badge-live">Live Simulation</span>
+      <span class="badge badge-insight">Pan-India Analytics</span>
+      <span class="badge badge-awareness">Awareness Toolkit</span>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div class="hero-map">
+      <div class="hero-light hero-light-1"></div>
+      <div class="hero-light hero-light-2"></div>
+      <div class="hero-light hero-light-3"></div>
+      <div class="hero-hologram">
+        <span class="holo-ring holo-ring-1"></span>
+        <span class="holo-ring holo-ring-2"></span>
+        <span class="holo-ring holo-ring-3"></span>
+        <span class="holo-core"></span>
+      </div>
+    </div>
+    <div class="hero-stats-card">
+      <div class="hero-stat-label">TRAFFIC DENSITY</div>
+      <div class="hero-stat-value">{{ home_metrics.density }}%</div>
+
+      <div class="hero-stat-label">AVERAGE WAIT TIME</div>
+      <div class="hero-stat-value">{{ home_metrics.avg_wait }} sec</div>
+
+      <div class="hero-stat-label">CONGESTION LEVEL</div>
+      <div class="hero-bar" data-density="{{ home_metrics.density | default(0) | float }}">
+        <div class="hero-bar-fill"></div>
+      </div>
+      <div class="hero-meta-row">
+        <span>{{ home_metrics.city_count | default(0) }} cities tracked</span>
+        <span>{{ home_metrics.travel_speed | default(0) }} km/h peak speed avg</span>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block main %}
+<main class="home-main">
+  <section class="card immersive-preview">
+    <div class="immersive-copy">
+      <h2>Immersive control centre</h2>
+      <p>
+        Experience your adaptive junction in a futuristic console view. Layered holographic grids and
+        animated rings highlight live pressure on each approach, while the dashboard streams lane
+        throughput updates in sync with the simulation.
+      </p>
+      <ul class="immersive-highlights">
+        <li>3D-inspired animated node showing real-time density.</li>
+        <li>Dynamic glow accents reacting to the latest traffic metrics.</li>
+        <li>Ready for any laptop/browser with GPU-friendly CSS animations.</li>
+      </ul>
+      <a class="hero-cta" href="{{ url_for('dashboard') }}">Jump into the live console</a>
+    </div>
+    <div class="immersive-visual">
+      <div class="grid-plane"></div>
+      <div class="grid-plane grid-plane--mid"></div>
+      <div class="grid-plane grid-plane--top"></div>
+      <div class="orbit orbit-outer"></div>
+      <div class="orbit orbit-inner"></div>
+      <div class="orbit-dot orbit-dot-1"></div>
+      <div class="orbit-dot orbit-dot-2"></div>
+      <div class="orbit-dot orbit-dot-3"></div>
+      <div class="holo-beam"></div>
+    </div>
+  </section>
+
+  <section class="card home-facts">
+    <h2>India’s congestion challenge</h2>
+    <div class="home-facts-grid">
+      <article>
+        <h3>Delhi NCR</h3>
+        <p>Average commuter loses 190 hours/year in jams. Adaptive cycles cut delay by 28%.</p>
+      </article>
+      <article>
+        <h3>Bengaluru</h3>
+        <p>World’s 2nd slowest peak speed (18 km/h). Dynamic signal times unlock smoother corridors.</p>
+      </article>
+      <article>
+        <h3>Mumbai</h3>
+        <p>Signal wait often exceeds 4 minutes. Density-aware phases reduce fuel burn dramatically.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="card home-modules">
+    <h2>Platform highlights</h2>
+    <div class="home-modules-grid">
+      <article>
+        <h3>Live Dashboard</h3>
+        <p>Control simulations, watch lane counters, and stream the adaptive intersection in real time.</p>
+      </article>
+      <article>
+        <h3>Traffic Awareness</h3>
+        <p>Educate drivers on signal rules, right-of-way, and penalties—built directly into the site.</p>
+      </article>
+      <article>
+        <h3>City Insights</h3>
+        <p>Compare congestion across metros and showcase how our system alleviates each hotspot.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="card feature-comparison">
+    <h2>Why adaptive beats fixed-time controllers</h2>
+    <div class="comparison-grid">
+      <div>
+        <h3>Legacy Signals</h3>
+        <ul>
+          <li>Static cycle plans updated once a season</li>
+          <li>No visibility into lane-level throughput</li>
+          <li>Manual coordination across intersections</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Adaptive Suite</h3>
+        <ul>
+          <li>Updates phases every second using live detections</li>
+          <li>AI-derived alerts for congestion and violations</li>
+          <li>City-wide optimization with cloud dashboards</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="card awareness-promo">
+    <div>
+      <h2>Make compliance the default</h2>
+      <p>
+        Run in-browser campaigns highlighting helmets, seatbelts, school zones, and no-honking
+        districts. Automated reminders appear alongside live stats to nudge behaviour change.
+      </p>
+      <a class="hero-cta" href="{{ url_for('awareness') }}">Browse awareness toolkit</a>
+    </div>
+    <div class="awareness-promo-visual">
+      <span class="badge badge-critical">Zero fatal junctions goal</span>
+      <span class="badge badge-info">Community scoreboards</span>
+    </div>
+  </section>
+</main>
+{% endblock %}
+
+{% block body_scripts %}
+{{ super() }}
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const heroBar = document.querySelector(".hero-bar[data-density]");
+    if (!heroBar) return;
+    const fill = heroBar.querySelector(".hero-bar-fill");
+    const density = Number(heroBar.dataset.density || 0);
+    if (fill) {
+      fill.style.width = `${Math.max(0, Math.min(100, density))}%`;
+    }
+  });
+</script>
+{% endblock %}
+
+

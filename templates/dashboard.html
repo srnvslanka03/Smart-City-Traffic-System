@@ -1,0 +1,176 @@
+{% extends "base.html" %}
+{% set title = "Smart City Dashboard" %}
+
+{% block hero %}
+<div class="hero hero-compact">
+  <div class="hero-left">
+    <h1>DASHBOARD</h1>
+    <p class="hero-subtitle">
+      Configure simulations, monitor vehicle flow per lane, and watch the adaptive intersection in
+      real time.
+    </p>
+  </div>
+</div>
+{% endblock %}
+
+{% block main %}
+<main class="app-main dashboard-main">
+  <section class="card controls-card" id="controlsSection">
+    <h2 class="animated-highlight">Simulation Controls</h2>
+    <form id="run-form">
+      <div class="form-row">
+        <label for="simTime">Simulation time (seconds)</label>
+        <input id="simTime" type="number" min="30" max="10000" value="120" />
+      </div>
+      <div class="form-row">
+        <label for="minGreen">Minimum green time (seconds)</label>
+        <input id="minGreen" type="number" min="5" max="120" value="10" />
+      </div>
+      <div class="form-row">
+        <label for="maxGreen">Maximum green time (seconds)</label>
+        <input id="maxGreen" type="number" min="10" max="300" value="60" />
+      </div>
+    <p class="hint">
+        The backend runs the original <code>simulation.py</code>. You'll see the live signal phase,
+        lane counts, and per-vehicle breakdown below.
+      </p>
+    </form>
+
+    <div class="simulation-controls">
+      <button id="startBtn" type="submit" form="run-form">Start Simulation</button>
+      <button id="stopBtn" disabled>Stop Simulation</button>
+    </div>
+
+    <div class="hero-map">
+      <div class="hero-light hero-light-1"></div>
+      <div class="hero-light hero-light-2"></div>
+      <div class="hero-light hero-light-3"></div>
+      <div class="hero-hologram">
+        <span class="holo-ring holo-ring-1"></span>
+        <span class="holo-ring holo-ring-2"></span>
+        <span class="holo-ring holo-ring-3"></span>
+        <span class="holo-core"></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="card stats-card">
+    <h2>Live Statistics & Visual Simulation</h2>
+    <div class="stats-layout">
+      <div class="stats-grid">
+        <div class="stat-block wide">
+          <div class="stat-label">Current phase</div>
+          <div class="stat-value" id="phaseLabel">—</div>
+        </div>
+
+        <div class="stat-block">
+          <div class="stat-label">Lane 1</div>
+          <div class="stat-value" id="lane1">0 vehicles</div>
+          <p class="lane-breakdown" id="lane1Types">
+            <span class="lane-chip lane-chip--empty">No vehicles yet</span>
+          </p>
+        </div>
+        <div class="stat-block">
+          <div class="stat-label">Lane 2</div>
+          <div class="stat-value" id="lane2">0 vehicles</div>
+          <p class="lane-breakdown" id="lane2Types">
+            <span class="lane-chip lane-chip--empty">No vehicles yet</span>
+          </p>
+        </div>
+        <div class="stat-block">
+          <div class="stat-label">Lane 3</div>
+          <div class="stat-value" id="lane3">0 vehicles</div>
+          <p class="lane-breakdown" id="lane3Types">
+            <span class="lane-chip lane-chip--empty">No vehicles yet</span>
+          </p>
+        </div>
+        <div class="stat-block">
+          <div class="stat-label">Lane 4</div>
+          <div class="stat-value" id="lane4">0 vehicles</div>
+          <p class="lane-breakdown" id="lane4Types">
+            <span class="lane-chip lane-chip--empty">No vehicles yet</span>
+          </p>
+        </div>
+
+        <div class="stat-block">
+          <div class="stat-label">Total vehicles</div>
+          <div class="stat-value" id="totalVehicles">0</div>
+        </div>
+        <div class="stat-block">
+          <div class="stat-label">Total time</div>
+          <div class="stat-value" id="totalTime">0 s</div>
+        </div>
+        <div class="stat-block">
+          <div class="stat-label">Throughput</div>
+          <div class="stat-value" id="throughput">0 veh/unit</div>
+        </div>
+        <div class="stat-block">
+          <div class="stat-label">Average wait</div>
+          <div class="stat-value" id="avgWait">0 sec</div>
+        </div>
+        <div class="stat-block wide">
+          <div class="stat-label">Simulation count accuracy</div>
+          <div class="stat-value" id="accuracyLabel">0%</div>
+          <div class="hero-bar">
+            <div class="hero-bar-fill" id="accuracyBar" style="width: 0%"></div>
+          </div>
+        </div>
+        <div class="stat-block wide">
+          <div class="stat-label">Congestion level</div>
+          <div class="stat-value" id="densityLabel">0%</div>
+          <div class="hero-bar">
+            <div class="hero-bar-fill" id="densityBar" style="width: 0%"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="visuals-column">
+        <div class="canvas-wrapper">
+          <canvas id="simCanvas" width="520" height="320"></canvas>
+          <p class="canvas-hint">
+            Live visualization of the adaptive intersection with vehicle flow tracking.
+          </p>
+          <div class="canvas-legend">
+            <span><span class="legend-dot legend-car"></span>Car</span>
+            <span><span class="legend-dot legend-bus"></span>Bus</span>
+            <span><span class="legend-dot legend-truck"></span>Truck</span>
+            <span><span class="legend-dot legend-rickshaw"></span>Rickshaw</span>
+            <span><span class="legend-dot legend-bike"></span>Bike</span>
+          </div>
+        </div>
+
+        <section class="card insights-card">
+          <h3 class="animated-highlight">Adaptive Insights</h3>
+          <ul class="insights-list">
+            <li>
+              <span class="insight-label">Busiest lane</span>
+              <span class="insight-value" id="insightBusiestLane">—</span>
+            </li>
+            <li>
+              <span class="insight-label">Dominant vehicle type</span>
+              <span class="insight-value" id="insightDominantType">—</span>
+            </li>
+            <li>
+              <span class="insight-label">Throughput trend</span>
+              <span class="insight-value" id="insightThroughput">—</span>
+            </li>
+            <li>
+              <span class="insight-label">Control tip</span>
+              <span class="insight-value insight-tip" id="insightTip">Monitor lane flow to keep the intersection balanced.</span>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </section>
+
+  <section class="card log-card">
+    <h2 class="animated-highlight">Simulation Log</h2>
+    <pre id="logView" class="log-view">Log output will appear here after you start a run...</pre>
+  </section>
+</main>
+{% endblock %}
+
+{% block body_scripts %}
+<script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+{% endblock %}
