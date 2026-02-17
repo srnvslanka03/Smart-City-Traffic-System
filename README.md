@@ -2,7 +2,7 @@
 
 [![Python 3.11.3](https://img.shields.io/badge/python-3.11.3-blue.svg)](https://www.python.org/downloads/release/python-3113/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Open in GitHub](https://img.shields.io/badge/Open%20in-GitHub-blue?logo=github)](https://github.com/srnvslanka03/Traffic-Light-Surveillance-Management-System-)
+[![Open in GitHub](https://img.shields.io/badge/Open%20in-GitHub-blue?logo=github)](https://github.com/srnvslanka03/Smart-City-Traffic-System)
 
 An intelligent traffic management system that uses computer vision to analyze traffic density and optimize traffic light timings in real-time, reducing congestion and improving traffic flow.
 
