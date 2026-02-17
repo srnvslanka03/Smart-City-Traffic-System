@@ -27,8 +27,9 @@ An intelligent traffic management system that uses computer vision to analyze tr
 
 1. **Download and extract** the project or clone it using Git:
    ```
-   git clone https://github.com/srnvslanka03/Traffic-Light-Surveillance-Management-System-.git
-   cd Traffic-Light-Surveillance-Management-System-
+   
+   git clone https://github.com/srnvslanka03/Smart-City-Traffic-System-
+   
    ```
 
 2. **Run the setup script** (double-click `run.bat` or run in Command Prompt):
@@ -144,4 +145,4 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📧 Contact
 
-For any queries, please open an issue on the [GitHub repository](https://github.com/srnvslanka03/Traffic-Light-Surveillance-Management-System-).
+For any queries, please open an issue on the [GitHub repository](https://github.com/srnvslanka03/Smart-City-Traffic-System-).
